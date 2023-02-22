@@ -114,6 +114,30 @@ From the main readme:
 ***A set of python tools used for the University of Oregon's research into how the internet can be made more resilient in the event of natural disasters that damage routing infrastructure. `pnw_rtt` is a tool that can perform simulations of mixed networks along the west coast and provide estimated Round Trip Times of such networks(license: MIT)***
 
 
+#### /tools/pnw-rtt/pnw-rtt.py
+
+This files runs a simulation it has a nice help flag, this is the output:
+
+```
+Simulate RTT time for a mixed ground-satellite network in the PNW                                                                                                                                                                               positional arguments:          
+config           simulation config file                                                                                
+path             folder to run simulation in and store generated state                                                                                                                                                                        options:                                                                                                                 
+ -h, --help       show this help message and exit                                                                        
+-g, --gen-state  generate the required network state                                                                    
+-r, --run        run simulation                                                                                        
+-a, --all-pairs  Calculate RTT between all pairs of nodes not just a simple path 
+```
 
 
+#### /tools/gen-config/gen-exp-config.py
 
+```
+Generate simulation config for sector based experiment
+
+positional arguments:
+  sector_config  config file location
+  output_config  generated config file
+
+options:
+  -h, --help     show this help message and exit
+```
